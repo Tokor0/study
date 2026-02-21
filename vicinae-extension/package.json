@@ -2,12 +2,15 @@
   "name": "study-courses",
   "title": "Study Courses",
   "version": "1.0.0",
+  "icon": "icon.png",
+  "author": "hugo",
   "description": "Browse and pick courses managed by the study CLI",
   "license": "MIT",
   "commands": [
     {
       "name": "pick-course",
       "title": "Pick Course",
+      "description": "Browse courses grouped by faculty and open them",
       "mode": "view"
     }
   ],
@@ -29,7 +32,7 @@
     "@types/node": "^22.0.0"
   },
   "scripts": {
-    "dev": "vicinae dev",
-    "build": "vicinae build"
+    "dev": "vici dev",
+    "build": "vici build"
   }
 }
