@@ -1,0 +1,35 @@
+{
+  "name": "study-courses",
+  "title": "Study Courses",
+  "version": "1.0.0",
+  "description": "Browse and pick courses managed by the study CLI",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "pick-course",
+      "title": "Pick Course",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "coursesDir",
+      "title": "Courses Directory",
+      "description": "Override the default ~/courses directory path",
+      "type": "textfield",
+      "required": false
+    }
+  ],
+  "dependencies": {
+    "@vicinae/api": "latest",
+    "smol-toml": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^22.0.0"
+  },
+  "scripts": {
+    "dev": "vicinae dev",
+    "build": "vicinae build"
+  }
+}
